@@ -14,10 +14,82 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 .logo {
-    height: 30px;
+    height: 25px;
     width: auto;
+    fill: white;
+}
+
+/* reduced image sizes temporarily - will delete later */
+img {
+    width: 10%;
+}
+
+.btn {
+    font-family: inherit;
+    padding: 1.5rem 2.5rem;
+    font-size: inherit;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+
+/* NAV */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 0 11rem;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.nav--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255, 0.15);
+    padding: 2.7rem 0;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-right: 2rem;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.nav__cta {
+    margin-left: 4rem;
+    background-color: #2f4a73;
+    color: white;
+}
+
+/* HEADER */
+
+.header__container {
+    height: 100vh;
+    background: url('public/img/https___ouraring.com_v3_images_01-hd.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
 }
