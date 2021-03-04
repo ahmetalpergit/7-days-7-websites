@@ -32,11 +32,19 @@ img {
 
 .btn {
     font-family: inherit;
-    padding: 1.5rem 2.5rem;
+    padding: 1.6rem 2.8rem;
     font-size: inherit;
     border-radius: 50px;
     background-color: white;
+    color: #2f4a73;
     border: none;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #fd6558;
+    color: white;
+    transform: scale(0.95);
 }
 
 .heading--primary {
@@ -82,6 +90,11 @@ img {
     color: white;
     text-decoration: none;
     font-size: inherit;
+    transition: all 0.5s;
+}
+
+.nav__link:hover {
+    color: #fd6558;
 }
 
 .nav__cta {
