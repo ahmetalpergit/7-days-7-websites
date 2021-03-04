@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before,
+*:active,
+*:focus,
+*:hover {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.nav__logo .header__logo{
+    height: 30px;
+    width: auto;
+}
