@@ -39,6 +39,16 @@ img {
     border: none;
 }
 
+.heading--primary {
+    font-size: 6.5rem;
+    font-weight: 300;
+}
+
+.heading--secondary {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
 
 /* NAV */
 
@@ -84,6 +94,8 @@ img {
 
 .header__container {
     height: 100vh;
+    width: 100%;
+    padding: 0 11rem;
     background: url('public/img/https___ouraring.com_v3_images_01-hd.png');
     background-size: cover;
     background-position: center;
@@ -92,4 +104,40 @@ img {
     align-items: flex-start;
     justify-content: center;
     color: white;
+}
+
+.header__container > *:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+.header__heading,
+.header__description {
+    max-width: 65rem;
+}
+
+.header__banner__controls {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+}
+
+.header__banner__controls__btn {
+    text-decoration: none;
+    color: white;
+    padding: 2.7rem 3rem;
+    border: 3px solid #eee;
+    border-radius: 50%;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.header__container:hover > .header__banner__controls .header__banner__controls__btn{
+    opacity: 1;
+}
+
+.header__banner__controls__btn--left {
+    margin-right: 1rem;
 }
