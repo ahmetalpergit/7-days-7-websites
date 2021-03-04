@@ -17,7 +17,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.nav__logo .header__logo{
+.logo {
     height: 30px;
     width: auto;
 }
