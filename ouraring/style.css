@@ -58,6 +58,11 @@ img {
     font-weight: 300;
 }
 
+.heading--tertiary {
+    font-size: calc(1.6rem + 1.2vw);
+    font-weight: 500;
+}
+
 
 /* NAV */
 
@@ -239,3 +244,33 @@ img {
     right: 0;
 }
 
+/* SECTION ACCOLADES */
+
+.section__accolades {
+    width: 100%;
+    padding: 8vw 16vw;
+}
+
+.section__accolades__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__accolades__heading {
+    margin-bottom: 1rem;
+}
+
+.section__accolades__nav__count {
+    color: #fd6558;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.section__accolades__quote {
+    max-width: 65%;
+    margin-bottom: 5rem;
+}
+
+.section__accolades__logo {
+    width: 8rem;
+}
