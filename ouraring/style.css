@@ -313,6 +313,11 @@ img {
     transition: all 0.5s;
 }
 
+.section__blog__title {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 .section__blog__image:hover {
     transform: scale(1.2);
 }
