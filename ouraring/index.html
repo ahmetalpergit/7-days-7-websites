@@ -156,6 +156,17 @@
             <li class="footer__item"><a href="#" class="footer__link">Accessibility</a></li>
         </ul>
     </footer>
+    <script>
+        const nav = document.querySelector('.nav');
+        const handleScroll = () => {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('navMoving')
+            } else {
+                nav.classList.remove('navMoving');
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </body>
 
 </html>

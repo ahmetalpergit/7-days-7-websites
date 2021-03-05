@@ -25,7 +25,7 @@ body {
 }
 
 .white {
-    fill: white;
+    fill: inherit;
 }
 
 .navy {
@@ -82,7 +82,17 @@ img {
     width: 100%;
     padding: 0 8vw;
     background-color: transparent;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
+    z-index: 999;
+    color: white;
+    fill: white;
+}
+
+.navMoving {
+    background-color: rgba(255,255,255, 0.75);
+    color: #2f4a73;
+    fill: #2f4a73;
+    backdrop-filter: blur(10px);
 }
 
 .nav--wrapper {
@@ -91,20 +101,23 @@ img {
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255, 0.15);
     padding: 2.7rem 0;
+    color: inherit;
 }
 
 .nav__list {
     list-style: none;
     display: flex;
     align-items: center;
+    color: inherit;
 }
 
 .nav__item {
     margin-right: 2rem;
+    color: inherit;
 }
 
 .nav__link {
-    color: white;
+    color: inherit;
     text-decoration: none;
     font-size: inherit;
     transition: all 0.5s;
