@@ -22,7 +22,15 @@ body {
 .logo {
     height: 25px;
     width: auto;
+}
+
+.white {
     fill: white;
+}
+
+.navy {
+    fill: #2f4a73;
+    height: 30px;
 }
 
 /* reduced image sizes temporarily - will delete later */
@@ -358,4 +366,94 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+/* SECTION CONTACT */
+
+.contact {
+    padding: 8vw 8vw 0;
+    height: 80vh;
+    background: #f6f3ef;
+    color: #2f4a73;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 2.5vw;
+    height: 65vh;
+}
+
+.contact__content--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.contact__nav__list {
+    list-style: none;
+}
+
+.contact__nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact__content__newsletter__input__container {
+    position: relative;
+}
+
+.contact__content__newsletter__submit {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.contact__content__newsletter__message {
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.contact__content__newsletter__input {
+    padding: 1rem 2rem;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.contact__content__newsletter__label {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    font-weight: 500;
+}
+
+.contact__content__newsletter__disclaimer {
+    display: block;
+    color: rgba(63, 52, 31, 0.466);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 18rem;
+}
+
+.contact__nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__nav__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
