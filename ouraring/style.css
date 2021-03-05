@@ -98,7 +98,7 @@ img {
 }
 
 .nav__cta {
-    margin-left: 4rem;
+    margin-left: 6rem;
     background-color: #2f4a73;
     color: white;
 }
@@ -108,19 +108,19 @@ img {
 .header__container {
     height: 100vh;
     width: 100%;
-    padding: 0 11rem;
+    padding: 0 11rem 10vh;
     background: url('public/img/https___ouraring.com_v3_images_01-hd.png');
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
 }
 
 .header__container > *:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .header__heading,
@@ -132,7 +132,7 @@ img {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 8rem;
 
 }
 
@@ -140,7 +140,7 @@ img {
     text-decoration: none;
     color: white;
     padding: 2.7rem 3rem;
-    border: 3px solid #eee;
+    border: 3px solid #fd6558;
     border-radius: 50%;
     font-size: 2rem;
     opacity: 0;
@@ -153,4 +153,48 @@ img {
 
 .header__banner__controls__btn--left {
     margin-right: 1rem;
+    border: 3px solid #eee;
+}
+
+/* SECTION INTRODUCTION */
+
+.section__introduction {
+    background-color: #e5ded3;
+    padding: 11rem 11rem 22rem;
+    color: #2f4a73;
+    position: relative;
+}
+
+.section__introduction__btn {
+    color: white;
+    background-color: #2f4a73;
+}
+
+.section__introduction__description {
+    max-width: 45rem;
+    line-height: 1.7;
+    margin-bottom: 5rem;
+}
+
+.section__introduction__img-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.section__introduction__image {
+    height: auto;
+    width: 25vw;
+    margin-top: 10rem;
+}
+
+.section__introduction__image--left {
+    margin-right: 5rem;
+}
+
+.section__introduction__cta {
+    position: absolute;
+    bottom: 10.5rem;
+    left: 22rem;
 }
