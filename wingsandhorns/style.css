@@ -40,10 +40,10 @@ a:hover {
 .nav {
     position: fixed;
     display: flex;
-    padding: 3.6rem 8.8rem;
+    padding: 2.5rem 6.8rem;
     width: 100vw;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgba(255, 255, 255, 1);
     z-index: 999;
 }
@@ -56,7 +56,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 1);
     padding: 6rem 8.8rem 2rem;
     font-size: 1.3rem;
-    transition: all 0.2s;
+    transition: all 0.3s;
     visibility: hidden;
     opacity: 0;
     max-height: 0;
@@ -107,12 +107,20 @@ a:hover {
     list-style: none;
 }
 
+.nav__list__item {
+    padding: 1.5rem 2rem;
+}
+
+.nav__list__item img {
+    height: 13px;
+}
+
 .nav__list__link {
     color: #888;
 }
 
 .nav__list > *:not(:last-child) {
-    margin-right: 5rem;
+    margin-right: 2rem;
 }
 
 .nav__list--left .nav__list__link:first-child {
