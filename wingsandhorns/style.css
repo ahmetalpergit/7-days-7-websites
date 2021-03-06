@@ -27,6 +27,14 @@ h3 {
     font-size: 2rem;
 }
 
+a {
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #000;
+}
+
 /* NAV */
 
 .nav {
@@ -36,8 +44,58 @@ h3 {
     width: 100vw;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 999;
+}
+
+.nav__shop-hover {
+    display: flex;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 6rem 8.8rem 2rem;
+    font-size: 1.3rem;
+    transition: all 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+}
+
+.nav__list__item--shop:hover + .nav__shop-hover {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    top: 6rem;
+    max-height: 100vh;
+}
+
+.nav__shop-hover > * {
+    list-style: none;
+}
+
+.nav__shop-hover > *:not(:last-child) {
+    margin-right: 8rem;
+}
+
+.nav__shop-hover:hover {
+    visibility: visible;
+    opacity: 1;
+    max-height: 100vh;
+}
+
+.nav__shop__link {
+    color: #888;
+}
+
+.nav__shop__list > * {
+    margin-bottom: 2rem;
+}
+
+.nav__shop__item > .nav__shop__link {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.1rem;
 }
 
 .nav__logo > svg {
@@ -134,6 +192,7 @@ h3 {
     opacity: 1;
     visibility: visible;
     bottom: 7rem;
+    pointer-events: none;
 }
 
 .section__gallery__image-text h3 {
@@ -161,4 +220,48 @@ h3 {
 
 .section__accessory__text h3 {
     margin-bottom: 3rem;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 7rem 8.8rem 5rem;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav--bot {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__nav--top {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 0;
+}
+
+.footer__nav__link {
+    color: #888;
+}
+
+.footer__nav__social > *:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.footer__copyright {
+    color: #888;
+    font-size: 1.2rem;
 }

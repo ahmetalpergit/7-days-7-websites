@@ -9,4 +9,4 @@ _The websites I've recreated are by no means my own designs.These are live websi
 I've decided to keep my HTML and CSS skills sharp during the pandemic and created a fun challenge to copy 7 websites in 7 days. Below you'll find my documentation of the process and the resources. Hope you enjoy it!
 
 #### 05.03.2021
-1. [Oura Ring (my version)](7days7websites-ouraring.netlify.app) - [Original](https://ouraring.com/)
+1. [Oura Ring (my version)](https://7days7websites-ouraring.netlify.app) - [Original](https://ouraring.com/)
