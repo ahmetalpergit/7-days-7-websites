@@ -11,21 +11,28 @@
 }
 
 html {
-    font-size: 62.5; /* 1rem = 10px */
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
     font-family: 'Arimo', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
+    letter-spacing: 1.1px;
 }
 
 /* NAV */
 
 .nav {
     display: flex;
+    padding: 3.8rem 8.8rem;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nav__logo > svg {
+    transform: scale(1.2);
 }
 
 .nav__list {
@@ -34,5 +41,21 @@ body {
 }
 
 .nav__list__link {
-    color: #555;
+    color: #888;
+}
+
+.nav__list > *:not(:last-child) {
+    margin-right: 5rem;
+}
+
+.nav__list--left .nav__list__link:first-child {
+    position: relative;
+}
+
+.nav__list--left .nav__list__link:first-child > svg {
+    height: 1rem;
+    position: absolute;
+    top: 5px;
+    left: 4.5rem;
+    fill: #888;
 }
