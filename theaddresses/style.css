@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -15,7 +16,61 @@ html {
 }
 
 body {
-    font-family: 'Slabo 27px', serif;
-    font-size: 1.5rem;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.9rem;
+    font-weight: bolder;
     line-height: 1.5;
+    letter-spacing: -1.2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    font-family: inherit;
+    padding: 0.7rem 1.6rem;
+    font-size: inherit;
+    font-weight: bolder;
+    background-color: transparent;
+    letter-spacing: inherit;
+    border: 2px solid black;
+    transition: background-color 0.1s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* NAV */
+
+.nav {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 10rem;
+    background-color: #eedb7e;
+}
+
+.nav__logo {
+    height: 25px;
+    fill: black;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list__item {
+    padding: 1px 0;
+    margin-top: 5px;
+    margin-right: 2.5rem;
+}
+
+.nav__list__item:hover {
+    border-bottom: 2px solid black;
 }
