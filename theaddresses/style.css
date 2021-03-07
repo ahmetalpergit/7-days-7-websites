@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before,
+*:focus,
+*:link,
+*:active {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
