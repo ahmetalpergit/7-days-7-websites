@@ -1,3 +1,9 @@
+:root {
+    --font-slab: 'Cutive Mono', monospace;
+    --font-sans: 'Roboto Mono', monospace;
+    --color-yellow: #eedb7e
+}
+
 *,
 *::after,
 *::before,
@@ -16,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Cutive Mono', monospace;
+    font-family: var(--font-slab);
     font-size: 1.9rem;
     font-weight: bolder;
     line-height: 1.5;
@@ -44,6 +50,24 @@ a {
     color: white;
 }
 
+.heading--primary {
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: -3px;
+}
+
+.heading--secondary {
+
+}
+
+.heading--tertiary {
+    font-family: var(--font-sans);
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
 /* NAV */
 
 .nav {
@@ -53,7 +77,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1.8rem 10rem;
-    background-color: #eedb7e;
+    background-color: var(--color-yellow);
 }
 
 .nav__logo {
@@ -73,4 +97,30 @@ a {
 
 .nav__list__item:hover {
     border-bottom: 2px solid black;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    padding: 10rem;
+    background-color: var(--color-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__img {
+    width: 68vw;
+}
+
+.header__text-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.header__text-box > * {
+    width: fit-content;
 }
