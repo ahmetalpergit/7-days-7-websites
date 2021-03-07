@@ -13,3 +13,6 @@ I've decided to keep my HTML and CSS skills sharp during the pandemic and create
 
 #### 06.03.2021
 2. [wings+horns (my version)](https://7days7websites-wingshorns.netlify.app/) - [Original](https://wingsandhorns.com/)
+
+#### 07.03.2021
+3. [The Addresses (my version)](https://7days7websites-theaddresses.netlify.app/) - [Original](https://www.theaddresses.com/)
