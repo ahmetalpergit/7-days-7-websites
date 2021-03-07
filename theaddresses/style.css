@@ -1,7 +1,8 @@
 :root {
     --font-slab: 'Cutive Mono', monospace;
     --font-sans: 'Roboto Mono', monospace;
-    --color-yellow: #eedb7e
+    --color-yellow: #eedb7e;
+    --color-pink: #daabc2;
 }
 
 *,
@@ -151,4 +152,35 @@ a {
 
 .gallery__img--1, .gallery__img--4 {
     grid-column: 1 / 3;
+}
+
+/* SHARE */
+
+.share {
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--color-pink);
+}
+
+.share__text-box {
+    display: flex;
+    cursor: pointer;
+}
+
+.share img {
+    height: 23px;
+    transform: rotate(-90deg);
+    transition: all 0.3s;
+    margin-right: 3rem;
+}
+
+.share__text-box:hover > img {
+    transform: rotate(90deg);
+}
+
+.share__heading {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 1;
 }
