@@ -28,6 +28,8 @@ body {
     font-weight: bolder;
     line-height: 1.5;
     letter-spacing: -1.2px;
+    background-color: var(--color-yellow);
+    padding-top: 4rem;
 }
 
 a {
@@ -44,6 +46,7 @@ a {
     letter-spacing: inherit;
     border: 2px solid black;
     transition: background-color 0.1s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -80,16 +83,35 @@ a {
     margin-bottom: 2.5rem;
 }
 
+.underline {
+    border-bottom: 2px dashed black;
+    cursor: pointer;
+}
+
+.underline:hover {
+    border-bottom: 2px solid black;
+}
+
 /* NAV */
 
 .nav {
     width: 100vw;
     display: flex;
-    position: fixed;
     justify-content: space-between;
     align-items: center;
     padding: 1.8rem 10rem;
+}
+
+.nav--header {
+    position: absolute;
+    top: 4rem;
     background-color: var(--color-yellow);
+    width: 100%;
+}
+
+.nav--moving {
+    position: fixed;
+    top: 0;
 }
 
 .nav__logo {
@@ -99,12 +121,13 @@ a {
 
 .nav__list {
     display: flex;
+    align-items: center;
 }
 
 .nav__list__item {
     padding: 1px 0;
-    margin-top: 5px;
     margin-right: 2.5rem;
+    border-bottom: 2px solid transparent;
 }
 
 .nav__list__item:hover {
@@ -115,7 +138,7 @@ a {
 
 .header {
     width: 100%;
-    padding: 10rem;
+    padding: 12rem 10rem 10rem;
     background-color: var(--color-yellow);
     display: flex;
     flex-direction: column;
@@ -144,6 +167,7 @@ a {
     padding: 10rem;
     grid-template-columns: 50% 50%;
     gap: 10rem 2rem;
+    background-color: white;
 }
 
 .gallery__img {
@@ -184,3 +208,65 @@ a {
     font-weight: bolder;
     line-height: 1;
 }
+
+/* FOOTER */
+
+.footer {
+    padding: 10rem;
+    background-image: url('public/img/noise-texture.jpg');
+}
+
+@keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.footer svg {
+    height: 12rem;
+    -webkit-animation: rotating 60s linear infinite;
+    -moz-animation: rotating 60s linear infinite;
+    -ms-animation: rotating 60s linear infinite;
+    -o-animation: rotating 60s linear infinite;
+    animation: rotating 60s linear infinite;
+}
+
+.nav__footer {
+    padding: 0;
+    width: 100%;
+}
+
+.nav__footer--right {
+    display: flex;
+    height: 12rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav__credits {
+    display: flex;
+}
+
+.nav__credits > *:not(:last-child) {
+    margin-right: 2rem;
+    border-bottom: 2px dashed black;
+}
+
+.nav__credits__item {
+    font-family: var(--font-sans);
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.nav__credits__item:hover {
+    border-bottom: 2px solid black;
+}
+
