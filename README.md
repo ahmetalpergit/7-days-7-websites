@@ -16,3 +16,6 @@ I've decided to keep my HTML and CSS skills sharp during the pandemic and create
 
 #### 07.03.2021
 3. [The Addresses (my version)](https://7days7websites-theaddresses.netlify.app/) - [Original](https://www.theaddresses.com/)
+
+#### 08.03.2021
+4. [Rosie Harriet Ellis (my version)](https://7days7websites-rosieharrietellis.netlify.app/) - [Original](https://www.rosieharrietellis.com/)
