@@ -38,10 +38,40 @@ a:hover {
 
 .nav {
     width: 100%;
-    padding: 4.7rem 6.2rem;
+    padding: calc(1rem + 2.4vw) calc(2rem + 3vw);
 }
 
 .nav__list {
     display: flex;
     justify-content: space-between;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    width: 100%;
+    padding: calc(1rem + 2vw) calc(4rem + 6vw);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8vw;
+}
+
+.gallery__image-box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__image-box:hover > .gallery__img-text {
+    color: var(--color-red);
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery__img-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
