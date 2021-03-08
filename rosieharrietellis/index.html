@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#" class="nav__resp__menu">MENU</a>
+    <nav class="nav__resp">
+        <ul class="nav__resp__list">
+            <li class="nav__resp__item"><a href="#" class="nav__resp__link">INDEX</a></li>
+            <li class="nav__resp__item"><a href="#" class="nav__resp__link">PEOPLE</a></li>
+            <li class="nav__resp__item"><a href="#" class="nav__resp__link">PRODUCTS</a></li>
+            <li class="nav__resp__item"><a href="#" class="nav__resp__link">PROFILE</a></li>
+            <li class="nav__resp__item"><a href="#" class="nav__resp__link nav__resp__close">CLOSE</a></li>
+        </ul>
+    </nav>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link nav__logo">ROSIE HARRIET ELLIS</a></li>
@@ -196,5 +206,24 @@
             </div>
         </div>
     </section>
+    <script>
+        const navMenuBtn = document.querySelector('.nav__resp__menu');
+        const navResp = document.querySelector('.nav__resp');
+        const navCloseBtn = document.querySelector('.nav__resp__close');
+
+        navMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            navResp.style.display = 'flex';
+            navResp.classList.add('show');
+        });
+
+        navCloseBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            navResp.classList.remove('show');
+            setTimeout(() => {
+                navResp.style.display = 'none';
+            }, 500)
+        })
+    </script>
 </body>
 </html>
