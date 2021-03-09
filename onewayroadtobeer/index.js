@@ -2,6 +2,9 @@
 
 // Set the date we're counting down to
 const countDownDate = new Date("Mar 29, 2021 03:00:00").getTime();
+const countDownDateGreen = new Date("Apr 12, 2021 03:00:00").getTime();
+const countDownDateOrange = new Date("May 17, 2021 03:00:00").getTime();
+const countDownDatePurple = new Date("Jun 21, 2021 03:00:00").getTime();
 
 // Update the count down every 1 second
 const coundownTimer = setInterval(function() {
@@ -18,7 +21,7 @@ const coundownTimer = setInterval(function() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
+  // Output the result in an element with id="countdown"
   document.getElementById("countdown").innerHTML = `
     <div class="time-container">
         <div class="time">${days < 10 ? `0${days}` : days}</div>
@@ -37,10 +40,73 @@ const coundownTimer = setInterval(function() {
         <div class="unit">SECS</div>
     </div>
   `;
-    
+        
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(coundownTimer);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML = "EXPIRED";
   }
+}, 1000);
+
+const countdownGreen = setInterval(function() {
+
+    const now = new Date().getTime();
+      
+    const distance = countDownDateGreen - now;
+      
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+    document.getElementById('countdown-green').innerHTML = `
+      <div class="days-container">
+          <div class="days">${days < 10 ? `0${days}` : days}</div>
+          <div>DAYS</div>
+      </div>
+    `
+    
+    if (distance < 0) {
+      clearInterval(countdownGreen);
+      document.getElementById("countdown-green").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+const countdownOrange = setInterval(function() {
+
+    const now = new Date().getTime();
+      
+    const distance = countDownDateOrange - now;
+      
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+    document.getElementById('countdown-orange').innerHTML = `
+      <div class="days-container">
+          <div class="days">${days < 10 ? `0${days}` : days}</div>
+          <div>DAYS</div>
+      </div>
+    `
+  
+    if (distance < 0) {
+      clearInterval(countdownOrange);
+      document.getElementById("countdown-orange").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+const countdownPurple = setInterval(function() {
+
+    const now = new Date().getTime();
+      
+    const distance = countDownDatePurple - now;
+      
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+    document.getElementById('countdown-purple').innerHTML = `
+      <div class="days-container">
+          <div class="days">${days < 10 ? `0${days}` : days}</div>
+          <div>DAYS</div>
+      </div>
+    `
+  
+    if (distance < 0) {
+      clearInterval(countdownPurple);
+      document.getElementById("countdown-purple").innerHTML = "EXPIRED";
+    }
 }, 1000);
