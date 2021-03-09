@@ -19,3 +19,6 @@ I've decided to keep my HTML and CSS skills sharp during the pandemic and create
 
 #### 08.03.2021
 4. [Rosie Harriet Ellis (my version)](https://7days7websites-rosieharrietellis.netlify.app/) - [Original](https://www.rosieharrietellis.com/)
+
+#### 09.03.2021
+5. [One way road to beer (my version)](https://7days7websites-onewayroadtobeer.netlify.app/) - [Original](https://onewayroadtobeer.com/)
