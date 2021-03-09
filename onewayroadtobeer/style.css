@@ -1,0 +1,37 @@
+:root {
+    --color-red: rgb(253, 91, 42);
+    --color-pink: rgb(250, 156, 190);
+    --color-green: rgb(147, 209, 172);
+    --color-orange: rgb(255, 182, 18);
+    --color-purple: rgb(137, 101, 221);
+}
+
+*,
+*::after,
+*::before,
+*:focus,
+*:link,
+*:active {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+}
+
+/* --------------------- */
+
