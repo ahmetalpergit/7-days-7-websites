@@ -76,7 +76,7 @@ a {
 }
 
 .social--twitter {
-    margin-top: 1.5rem;
+    margin-top: 1.9rem;
 }
 
 .content__tile {
@@ -120,10 +120,7 @@ a {
     display: flex;
     width: 100%;
     padding: 2rem 0;
-}
-
-#countdown > *:not(:last-child) {
-    margin-right: 2rem;
+    margin-left: -2rem;
 }
 
 .time-container {
@@ -131,10 +128,11 @@ a {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    min-width: 15rem;
 }
 
 .time {
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 300;
     letter-spacing: 3px;
     line-height: 1;
@@ -156,4 +154,30 @@ a {
     font-weight: 200;
     line-height: 1;
     margin-right: 0.7rem;
+}
+
+.beavertown {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    width: 19rem;
+    padding: 1.5rem 1.6rem;
+    background-color: black;
+    color: white;
+    border-radius: 10rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.beavertown img {
+    margin-right: 1rem;
+    width: 3.5rem;
+    height: auto;
+}
+
+.beavertown__text {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    letter-spacing: 0;
 }
