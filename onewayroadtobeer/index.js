@@ -110,3 +110,28 @@ const countdownPurple = setInterval(function() {
       document.getElementById("countdown-purple").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+const menuBtn = document.querySelector('.menu');
+const closeBtn = document.querySelector('.close');
+const beaver = document.querySelector('.beavertown');
+const tiles = document.querySelectorAll('.content__tile');
+const clickedContent = document.querySelector('.content__BIG');
+
+
+
+menuBtn.addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.add('hidden');
+    document.querySelector('.sidebarHidden').classList.remove('hidden');
+    beaver.classList.add('hidden');
+    tiles.forEach(el => el.classList.add('hidden'));
+    clickedContent.classList.remove('hidden');
+
+})
+
+closeBtn.addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.remove('hidden');
+    document.querySelector('.sidebarHidden').classList.add('hidden');
+    beaver.classList.remove('hidden');
+    tiles.forEach(el => el.classList.remove('hidden'));
+    clickedContent.classList.add('hidden');
+})
