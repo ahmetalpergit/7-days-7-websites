@@ -89,7 +89,7 @@ a {
     margin: 2rem 5rem;
     gap: 3rem;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 2fr) 1fr;
+    grid-template-rows: auto;
 }
 
 .box {
@@ -112,8 +112,8 @@ a {
     background-color: var(--color-blue);
     grid-column: 1 / 5;
     grid-row: 1 / 2;
-    width: 100%;
     height: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -147,8 +147,6 @@ a {
     background-color: var(--color-green);
     grid-column: 5 / 7;
     grid-row: 1 / 2;
-    width: 100%;
-    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -306,8 +304,20 @@ a {
     width: 8rem;
 }
 
+/* BOX-HONK */
 
-
+.box--honk {
+    background-image: url('public/img/honk-3b82d9ad647a8fcec9306f8907d60928.png'), linear-gradient(to right, var(--color-pink), var(--color-pink));
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+}
 
 
 
