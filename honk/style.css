@@ -225,6 +225,26 @@ a {
     grid-row: 2 / 3;
 }
 
+/* BOX-EMOJI */
+
+.box--emoji {
+    background-color: var(--color-green);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.emoji__container {
+    margin-bottom: 5rem;
+}
+
+.emoji {
+    height: 5rem;
+}
 
 
 
