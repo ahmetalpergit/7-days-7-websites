@@ -355,6 +355,40 @@ a {
     fill: rgb(42, 159, 255);
 }
 
+/* FOOTER */
+
+.footer {
+    margin: 2rem 5rem;
+    padding: 4rem 0;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__navigation {
+    display: flex;
+}
+
+.footer__item {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    transition: all 0.2s;
+}
+
+.footer__item:hover {
+    background-color: var(--color-gray);
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 1.7rem;
+}
+
+.footer__link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* ANIMATIONS */
 
 @keyframes blink {
