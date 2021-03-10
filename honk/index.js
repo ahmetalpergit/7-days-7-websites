@@ -1,3 +1,3 @@
 'use strict';
 
-document.querySelector('video').play();
+document.querySelector('.video').play();
