@@ -319,7 +319,41 @@ a {
     grid-row: 4 / 5;
 }
 
+.box--honk h1 {
+    margin-bottom: 1rem;
+}
 
+/* BOX-JOIN */
+
+.box--join {
+    /* background-color: var(--color-gray); */
+    background-image: url('public/img/honk-3b82d9ad647a8fcec9306f8907d60928.png'), linear-gradient(to right, var(--color-gray), var(--color-gray));
+    background-size: cover;
+    background-position-y: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    height: auto;
+}
+
+.box--join > * {
+    margin-bottom: 2rem;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn--twitter {
+    color: rgb(42, 159, 255);
+    margin-left: 2rem;
+}
+
+.btn--twitter svg {
+    fill: rgb(42, 159, 255);
+}
 
 /* ANIMATIONS */
 
