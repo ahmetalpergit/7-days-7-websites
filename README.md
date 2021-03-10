@@ -22,3 +22,6 @@ I've decided to keep my HTML and CSS skills sharp during the pandemic and create
 
 #### 09.03.2021
 5. [One way road to beer (my version)](https://7days7websites-onewayroadtobeer.netlify.app/) - [Original](https://onewayroadtobeer.com/)
+
+#### 10.03.2021
+6. [Honk (my version)](https://7days7websites-honk.netlify.app/) - [Original](https://honk.me/)
