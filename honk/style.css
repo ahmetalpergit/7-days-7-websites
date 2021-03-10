@@ -86,7 +86,7 @@ a {
 .grid-container {
     display: grid;
     margin: 2rem 5rem;
-    gap: 4rem;
+    gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 2fr) 1fr;
 }
@@ -94,6 +94,11 @@ a {
 .box {
     border-radius: 15px;
     padding: 4rem;
+    height: 46rem;
+}
+
+.box img {
+    max-width: 25rem;
 }
 
 /* BOX-HEADER */
@@ -151,11 +156,6 @@ a {
     margin-bottom: 5rem;
 }
 
-.bubble {
-    max-width: 25rem;
-
-}
-
 .dots {
     opacity: 0.3;
     position: absolute;
@@ -182,6 +182,51 @@ a {
 .hey {
     color: rgb(255, 138, 138);
     font-size: 12rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     font-weight: bold;
+}
+
+.cursor {
+    color: rgb(255, 78, 78);
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+/* BOX-SEND */
+
+.box--send {
+    background-color: var(--color-orange);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.box--send__icon {
+    margin-bottom: 7rem;
+}
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: rgb(255, 78, 78);
+    }
 }
