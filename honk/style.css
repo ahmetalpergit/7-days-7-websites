@@ -5,6 +5,7 @@
     --color-orange: #FFEACB;
     --color-purple: #D5D4F5;
     --color-gray: rgb(243, 244, 246);
+    --color-yellow: #FEFAF0;
 }
 
 *,
@@ -244,6 +245,21 @@ a {
 
 .emoji {
     height: 5rem;
+}
+
+/* BOX-FRIENDS */
+
+.box--friends {
+    background-image: url('public/img/best-friends-a8a5cf0725173860ae1ca6c6f5ff475a.png'), linear-gradient(to right, var(--color-yellow), var(--color-yellow));
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
 }
 
 
