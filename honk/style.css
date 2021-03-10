@@ -1,0 +1,35 @@
+:root {
+    --color-blue: #C0E5FE;
+    --color-pink: rgba(255, 177, 175, 0.5);
+    --color-green: rgba(142, 238, 185, 0.6);
+    --color-orange: #FFEACB;
+    --color-purple: #D5D4F5;
+    --color-gray: rgb(243, 244, 246);
+}
+
+*,
+*::after,
+*::before,
+*:focus,
+*:link,
+*:active {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+a {
+    color: black;
+}
