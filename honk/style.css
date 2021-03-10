@@ -101,6 +101,10 @@ a {
     max-width: 25rem;
 }
 
+.box__icon {
+    margin-bottom: 7rem;
+}
+
 /* BOX-HEADER */
 
 .box--header {
@@ -208,10 +212,18 @@ a {
     grid-row: 2 / 3;
 }
 
-.box--send__icon {
-    margin-bottom: 7rem;
-}
+/* BOX-CHAT */
 
+.box--chat {
+    background-color: var(--color-purple);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
 
 
 
