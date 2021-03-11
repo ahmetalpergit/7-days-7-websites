@@ -59,6 +59,12 @@ a {
     font-weight: 300;
     line-height: 1.25;
     margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.heading--secondary:hover {
+    opacity: 0.5;
 }
 
 .description {
@@ -78,7 +84,7 @@ a {
 
 .link:hover {
     color: rgba(0, 0, 0, .35);
-    border-bottom: none;
+    border-bottom: 0px solid transparent;
 }
 
 /**********************************/
@@ -140,8 +146,57 @@ a {
 .products__item__img {
     width: 100%;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 .products__item p {
     max-width: 30rem;
+}
+
+/* GALLERY */
+
+.gallery {
+    padding: 3rem;
+    width: 100%;
+}
+
+.gallery__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.gallery__slider__img {
+    width: 100%;
+    cursor: crosshair;
+}
+
+.gallery__slider__controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-line {
+    position: relative;
+}
+
+.slider-line:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.slider-line::before {
+    content: '';
+    width: 4rem;
+    height: 1.2px;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.line-selected::before {
+    background-color: var(--color-font-gray);
 }
