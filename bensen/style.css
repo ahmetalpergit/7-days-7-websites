@@ -231,3 +231,13 @@ a {
     grid-column: 1 / 2;
     width: 100%;
 }
+
+/* PRODUCTS-2 */
+
+.products__item--4 {
+    grid-column: 2 / 3;
+}
+
+.products__item--5 {
+    grid-column: 3 / 4;
+}
