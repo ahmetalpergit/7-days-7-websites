@@ -39,7 +39,7 @@ a {
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.5;
-    max-width: 60rem;
+    max-width: 58rem;
     position: relative;
 }
 
@@ -128,9 +128,13 @@ a {
 .founded {
     padding: 3rem;
     height: 50rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
-    justify-content: flex-start;
+}
+
+.founded h1 {
+    grid-column: 1 / 2;
 }
 
 /* PRODUCTS */
@@ -199,4 +203,18 @@ a {
 
 .line-selected::before {
     background-color: var(--color-font-gray);
+}
+
+/* PHILOSOPHY */
+
+.philosophy {
+    padding: 3rem;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.philosophy h1 {
+    grid-column: 2 / 3;
 }
