@@ -106,23 +106,35 @@ a {
     background-image: linear-gradient(to right, #00000025, #00000025), url('public/img/bensen-home-2545x1590px-4-4.jpg');
     background-size: cover;
     background-position: 50% 50%;
+    position: relative;
 }
 
 .nav {
     padding: 2rem 3rem;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    transition: all 0.2s;
+    z-index: 99;
 }
 
-.nav a {
-    color: white;
+.nav-BG {
+    background-image: linear-gradient(to bottom, white, white);
+    color: black;
+}
+
+.nav h3 {
     font-size: 1.4rem;
     font-weight: var(--font-bold);
+    cursor: pointer;
 }
 
 .logo {
     width: 4rem;
+    cursor: pointer;
 }
 
 .logo--black {
@@ -272,7 +284,7 @@ a {
 /* NAV BOT  */
 
 .nav-bot {
-    padding: 2rem 3rem;
+    padding: 5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,4 +301,50 @@ a {
 
 .nav-bot--right {
     align-items: flex-end;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 3rem;
+    display: flex;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: var(--color-font-gray);
+    width: calc(100% / 3);
+}
+
+.copyright--1 {
+    margin-right: 5rem;
+}
+
+.copyright--2 {
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    width: calc(100% / 3);
+    justify-content: center;
+}
+
+.social__logo {
+    width: 1.6rem;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.social__logo:hover {
+    opacity: 1;
+}
+
+.social__logo:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.empty {
+    width: calc(100% / 3);
 }
