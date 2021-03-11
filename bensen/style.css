@@ -1,0 +1,65 @@
+:root {
+    --color-blue: #C0E5FE;
+    --color-font-gray: #949494;
+    --font-thin: 300;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+*,
+*::after,
+*::before,
+*:focus,
+*:link,
+*:active {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.heading--primary {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.heading--secondary {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.link {
+    font-size: 1.3rem;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    color: rgba(0, 0, 0, .35);
+}
