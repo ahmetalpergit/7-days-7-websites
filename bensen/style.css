@@ -3,7 +3,7 @@
     --color-font-gray: #949494;
     --font-thin: 300;
     --font-regular: 400;
-    --font-bold: 700;
+    --font-bold: 800;
 }
 
 *,
@@ -62,4 +62,40 @@ a {
 
 .link:hover {
     color: rgba(0, 0, 0, .35);
+}
+
+/**********************************/
+
+/* HEADER */
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(to right, #00000025, #00000025), url('public/img/bensen-home-2545x1590px-4-4.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.nav {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: var(--font-bold);
+}
+
+.logo {
+    width: 4rem;
+}
+
+.logo--black {
+    fill: black;
+}
+
+.logo--white {
+    fill: white;
 }
