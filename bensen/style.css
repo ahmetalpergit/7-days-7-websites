@@ -87,6 +87,16 @@ a {
     border-bottom: 0px solid transparent;
 }
 
+.link--bot {
+    font-size: 1.25rem;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+.link--bot:hover {
+    color: rgba(0, 0, 0, .35);
+}
+
 /**********************************/
 
 /* HEADER */
@@ -257,4 +267,26 @@ a {
 .preview__img--3 {
     grid-column: 2 / 3;
     width: 100%;
+}
+
+/* NAV BOT  */
+
+.nav-bot {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bot__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bot__list > *:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.nav-bot--right {
+    align-items: flex-end;
 }
