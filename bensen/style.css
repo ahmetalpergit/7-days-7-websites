@@ -224,10 +224,10 @@ a {
 .preview {
     padding: 3rem;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 }
 
-.preview__img {
+.preview__img--1 {
     grid-column: 1 / 2;
     width: 100%;
 }
@@ -240,4 +240,21 @@ a {
 
 .products__item--5 {
     grid-column: 3 / 4;
+}
+
+/* PREVIEW-2 */
+
+.preview--2 {
+    gap: 1.5rem;
+}
+
+.preview__img--2 {
+    grid-column: 1 / 2;
+    width: 60%;
+    justify-self: flex-end;
+}
+
+.preview__img--3 {
+    grid-column: 2 / 3;
+    width: 100%;
 }
