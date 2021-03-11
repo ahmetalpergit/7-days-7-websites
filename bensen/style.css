@@ -218,3 +218,16 @@ a {
 .philosophy h1 {
     grid-column: 2 / 3;
 }
+
+/* PREVIEW */
+
+.preview {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.preview__img {
+    grid-column: 1 / 2;
+    width: 100%;
+}
