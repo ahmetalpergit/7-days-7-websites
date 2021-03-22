@@ -537,3 +537,133 @@ img {
     margin-right: 1.5rem;
 }
 
+@media (max-width: 800px) {
+    .nav__cta {
+        margin-left: 0;
+    }
+
+    .nav__list {
+        display: none;
+    }
+    
+    .section__introduction__cta {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .section__introduction__img-box {
+        justify-content: center;
+    }
+
+    .section__introduction__image--left {
+        margin-right: 2rem;
+    }
+
+    .section__introduction__image {
+        margin-top: 2rem;
+        width: 40%;
+    }
+
+    .section__introduction__description {
+        max-width: 100%;
+    }
+
+    .section__business__cta {
+        width: 50%;
+    }
+
+    .section__more__image--right {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .section__more {
+        flex-direction: column;
+    }
+
+    .section__more > * {
+        width: 100%;
+    }
+
+    .section__accolades {
+        padding: 5vw 5vw 5vw 8vw;
+    }
+
+    .section__blog {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+    }
+
+    .section__blog__article, .section__blog__heading {
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+
+    .section__blog__link {
+        display: none;
+    }
+
+    .section__blog__article--2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .section__business {
+        height: auto;
+    }
+
+    .section__business__cta {
+        width: 70%;
+    }
+
+    .section__business__description  {
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .contact {
+        height: auto;
+        padding: 3rem 8vw 0;
+    }
+
+    .contact__content {
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .contact__content > * {
+        width: 100%;
+    }
+
+    .contact__content--left > * {
+        margin: 2rem 0;
+    }
+
+    .contact__content__newsletter__input {
+        width: 100%;
+    }
+
+    .contact__nav__list {
+        width: 100%;
+        grid-gap: 1.5rem;
+    }
+
+    .contact__content {
+        height: 100%;
+    }
+
+    .footer {
+        padding: 8vw 8vw;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 56%;
+    }
+}

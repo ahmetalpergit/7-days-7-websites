@@ -348,4 +348,8 @@ img {
     .credits--left {
         margin-bottom: 3rem;
     }
+
+    .beavertown {
+        position: fixed;
+    }
 }
